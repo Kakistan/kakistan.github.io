@@ -40,6 +40,7 @@ var sources = [
     { name: 'Dominic King', type: 'journalist', tier: 2, specialty: 'Premier League', link: 'DominicKing_DM' },
     { name: 'Daniel Taylor', type: 'journalist', tier: 2, specialty: 'Premier League', link: 'DTathletic' },
     { name: 'Tom Collomosse', type: 'journalist', tier: 2, specialty: 'Premier League', link: 'TomCollomosse' },
+    { name: 'Matt Maher', type: 'journalist', tier: 2, specialty: 'Premier League', link: 'mjmarr_star' },
     { name: 'Jacob Steinberg', type: 'journalist', tier: 2, specialty: 'Chelsea/West Ham', link: 'JacobSteinberg' },
     { name: 'Simon Collings', type: 'journalist', tier: 2, specialty: 'Arsenal', link: 'sr_collings' },
     { name: 'Charlie Haffenden', type: 'journalist', tier: 2, specialty: 'Brighton', link: 'JournoHaff' },
