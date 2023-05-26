@@ -80,15 +80,15 @@ body {
 }
 
 .tier-color-1 {
-    background-color: #24f847;
+    background-color: #00ff00;
 }
 
 .tier-color-2 {
-    background-color: #f0fc51;  /* Good tier */
+    background-color: #ffff00;  /* Good tier */
 }
 
 .tier-color-3 {
-    background-color: #ffa600;  /* Medium tier */
+    background-color: #ff8000;  /* Medium tier */
 }
 
 .tier-color-4 {
