@@ -1,3 +1,3 @@
-# FPLcord Discord
+# Transfer Reliability Guide made by Kaki
 
-https://fplcord.github.io
+https://kakistan.github.io
