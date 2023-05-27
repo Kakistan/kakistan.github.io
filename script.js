@@ -30,9 +30,11 @@ var sources = [
     { name: 'Dan Kilpatrick', type: 'journalist', tier: 1, specialty: 'Tottenham', link: 'Dan_KP' },
     { name: 'Roshane Thomas', type: 'journalist', tier: 1, specialty: 'West Ham', link: 'RoshaneSport' },
     { name: 'Mohamed Bouhafsi', type: 'journalist', tier: 1, specialty: 'France', link: 'mohamedbouhafsi' },
+    { name: 'Mike Verweij', type: 'journalist', tier: 1, specialty: 'Netherlands', link: 'MikeVerweij' },
     { name: 'Phil Hay', type: 'journalist', tier: 1, specialty: 'Leeds', link: 'PhilHay_' },
     { name: 'Graham Smyth', type: 'journalist', tier: 1, specialty: 'Leeds', link: 'GrahamSmyth' },
-    { name: 'BBC', type: 'media', tier: 1, link: 'BBCSport' },  
+    { name: 'BBC', type: 'media', tier: 1, link: 'BBCSport' },
+    { name: 'The Athletic', type: 'media', tier: 1, link: 'TheAthleticFC' },
     // Tier 2
     { name: 'Fabrizio Romano', type: 'journalist', tier: 2, specialty: 'Global', link: 'FabrizioRomano' },
     { name: 'Alex Crook', type: 'journalist', tier: 2, specialty: 'Premier League', link: 'alex_crook' },
@@ -47,6 +49,7 @@ var sources = [
     { name: 'Nizaar Kinsella', type: 'journalist', tier: 2, specialty: 'Chelsea', link: 'NizaarKinsella' },
     { name: 'Liam Twomey', type: 'journalist', tier: 2, specialty: 'Chelsea', link: 'liam_twomey' },
     { name: 'Adam Newson', type: 'journalist', tier: 2, specialty: 'Chelsea', link: 'AdamNewson' },
+    { name: 'Ed Aarons', type: 'journalist', tier: 2, specialty: 'Crystal Palace', link: 'ed_aarons' },
     { name: 'The Bobble', type: 'journalist', tier: 2, specialty: 'Everton', link: 'ElBobble' },
     { name: 'Patrick Boyland', type: 'journalist', tier: 2, specialty: 'Everton', link: 'Paddy_Boyland' },
     { name: 'Neil Jones', type: 'journalist', tier: 2, specialty: 'Liverpool', link: 'neiljonesgoal' },
@@ -80,6 +83,8 @@ var sources = [
     { name: 'Owen O’Brien', type: 'shitposter', tier: 4, link: 'SportOwenO' },
     { name: 'Miguel Delaney', type: 'shitposter', tier: 4, link: 'MiguelDelaney' },
     { name: 'Daily Mail', type: 'media', tier: 4, link: 'MailSport' },
+    { name: 'The Sun', type: 'media', tier: 4, link: 'TheSunFootball' },
+    { name: 'Daily Mirror', type: 'media', tier: 4, link: 'MirrorFootball' },
 ];
 
 sources.forEach(source => {
