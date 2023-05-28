@@ -77,6 +77,7 @@ var sources = [
     { name: 'Joe Donnohue', type: 'journalist', tier: 2, specialty: 'Leeds', link: 'JoeDonnohue' },
     { name: 'The Times', type: 'media', tier: 2, link: 'TimesSport' },
     { name: 'COPE', type: 'media', tier: 2, link: 'COPE' },
+    { name: 'BILD', type: 'media', tier: 2, link: 'BILD_Sport' },   
     // Tier 3
     { name: 'Santi Aouna', type: 'journalist', tier: 3, specialty: 'Global', link: 'Santi_J_FM' },
     { name: 'Mark Ogden', type: 'journalist', tier: 3, specialty: 'Premier League', link: 'MarkOgden_' },
@@ -87,7 +88,6 @@ var sources = [
     { name: 'Sky Sports', type: 'media', tier: 3, link: 'SkyFootball' },
     { name: 'The Guardian', type: 'media', tier: 3, link: 'guardian_sport' },
     { name: 'The Telegraph', type: 'media', tier: 3, link: 'TelegraphSport' },
-    { name: 'Sky Sports', type: 'media', tier: 3, link: 'SkyFootball' },
     // Tier 4
     { name: 'Pedro Almeida', type: 'shitposter', tier: 4, link: 'pedrogva6' },
     { name: 'Nicolo Schira', type: 'shitposter', tier: 4, link: 'NicoSchira' },
