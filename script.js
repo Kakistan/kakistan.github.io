@@ -71,6 +71,7 @@ var sources = [
     { name: 'Steve Madeley', type: 'journalist', tier: 2, specialty: 'Wolves', link: 'SteveMadeley78' },
     { name: 'Stephen McGowan', type: 'journalist', tier: 2, specialty: 'Scotland', link: 'mcgowan_stephen' },
     { name: 'Matteo Moretto', type: 'journalist', tier: 2, specialty: 'Spain', link: 'MatteMoretto' },
+    { name: 'Edu Polo', type: 'journalist', tier: 2, specialty: 'Spain', link: 'EduPolo' },    
     { name: 'Christian Falk', type: 'journalist', tier: 2, specialty: 'Bayern', link: 'cfbayern' },
     { name: 'Lee Sobot', type: 'journalist', tier: 2, specialty: 'Leeds', link: 'LeeSobotYEP' },
     { name: 'Beren Cross', type: 'journalist', tier: 2, specialty: 'Leeds', link: 'BerenCross' },
