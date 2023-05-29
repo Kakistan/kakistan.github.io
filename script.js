@@ -123,11 +123,8 @@ sources.forEach(source => {
 })
 
 document.querySelectorAll('.tier-content').forEach(node => {
-    const element = node.querySelector('.media, .aggregator');
+    const element = node.querySelector('.media');
     if (element && element.classList.contains('media')) {
         node.insertBefore(document.createRange().createContextualFragment('<div class="flex-break"></div>'), element);
-    }
-    else if (element && element.classList.contains('aggregator')) {
-        node.appendChild(document.createRange().createContextualFragment('<div class="flex-break"></div>'), element);
     }
 })
