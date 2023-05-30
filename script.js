@@ -69,6 +69,7 @@ var sources = [
     { name: 'Jack Pitt-Brooke', type: 'journalist', tier: 2, specialty: 'Tottenham', link: 'JackPittBrooke' },
     { name: 'Liam Keen', type: 'journalist', tier: 2, specialty: 'Wolves', link: 'LiamKeen_Star' },
     { name: 'Steve Madeley', type: 'journalist', tier: 2, specialty: 'Wolves', link: 'SteveMadeley78' },
+    { name: 'Florian Plettenberg', type: 'journalist', tier: 2, specialty: 'Germany', link: 'Plettigoal' },
     { name: 'Stephen McGowan', type: 'journalist', tier: 2, specialty: 'Scotland', link: 'mcgowan_stephen' },
     { name: 'Matteo Moretto', type: 'journalist', tier: 2, specialty: 'Spain', link: 'MatteMoretto' },
     { name: 'Edu Polo', type: 'journalist', tier: 2, specialty: 'Spain', link: 'EduPolo' },    
@@ -110,6 +111,7 @@ var sources = [
     { name: 'Marca', type: 'media', tier: 4, link: 'marca' },
     { name: 'Daily Express', type: 'media', tier: 4, link: 'DExpress_Sport' },
     { name: 'Daily Star', type: 'media', tier: 4, link: 'DailyStar_Sport' },
+    { name: 'Foot Mercato', type: 'media', tier: 4, link: 'footmercato' },
 ];
 
 sources.forEach(source => {
