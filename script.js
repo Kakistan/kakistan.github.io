@@ -116,6 +116,7 @@ var sources = [
     { name: 'Daily Express', type: 'media', tier: 4, link: 'DExpress_Sport' },
     { name: 'Daily Star', type: 'media', tier: 4, link: 'DailyStar_Sport' },
     { name: 'Foot Mercato', type: 'media', tier: 4, link: 'footmercato' },
+    { name: 'Football Insider', type: 'media', tier: 4, link: 'footyinsider247' },
 ];
 
 sources.forEach(source => {
