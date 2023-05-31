@@ -80,10 +80,12 @@ var sources = [
     { name: 'The Times', type: 'media', tier: 2, link: 'TimesSport' },
     { name: 'Standard Sport', type: 'media', tier: 2, link: 'standardsport' },
     { name: 'COPE', type: 'media', tier: 2, link: 'COPE' },
-    { name: 'BILD', type: 'media', tier: 2, link: 'BILD_Sport' },   
+    { name: 'BILD', type: 'media', tier: 2, link: 'BILD_Sport' },
+    { name: 'Record', type: 'media', tier: 2, link: 'Record_Portugal' },
     // Tier 3
     { name: 'Santi Aouna', type: 'journalist', tier: 3, specialty: 'Global', link: 'Santi_J_FM' },
     { name: 'Mark Ogden', type: 'journalist', tier: 3, specialty: 'Premier League', link: 'MarkOgden_' },
+    { name: 'Mark Ogden', type: 'journalist', tier: 3, specialty: 'Premier League', link: 'skysports_sheth' },
     { name: 'FPLVillan', type: 'journalist', tier: 3, specialty: 'Aston Villa', link: 'FPLVillan' },
     { name: 'Gerard Romero', type: 'journalist', tier: 3, specialty: 'Barcelona', link: 'gerardromero' },
     { name: 'Gianluca Di Marzio', type: 'journalist', tier: 3, specialty: 'Italy', link: 'DiMarzio' },
