@@ -78,6 +78,7 @@ var sources = [
     { name: 'Beren Cross', type: 'journalist', tier: 2, specialty: 'Leeds', link: 'BerenCross' },
     { name: 'Joe Donnohue', type: 'journalist', tier: 2, specialty: 'Leeds', link: 'JoeDonnohue' },
     { name: 'The Times', type: 'media', tier: 2, link: 'TimesSport' },
+    { name: 'Standard Sport', type: 'media', tier: 2, link: 'standardsport' },
     { name: 'COPE', type: 'media', tier: 2, link: 'COPE' },
     { name: 'BILD', type: 'media', tier: 2, link: 'BILD_Sport' },   
     // Tier 3
