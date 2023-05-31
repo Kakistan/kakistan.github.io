@@ -62,6 +62,7 @@ var sources = [
     { name: 'Simon Mullock', type: 'journalist', tier: 2, specialty: 'Man City', link: 'MullockSMirror' },
     { name: 'Simon Bajkowski', type: 'journalist', tier: 2, specialty: 'Man City', link: 'spbajko' },
     { name: 'Samuel Luckhurst', type: 'journalist', tier: 2, specialty: 'Man Utd', link: 'samuelluckhurst' },
+    { name: 'Chris Wheeler', type: 'journalist', tier: 2, specialty: 'Man Utd', link: 'ChrisWheelerDM' },
     { name: 'James Ducker', type: 'journalist', tier: 2, specialty: 'Man Utd', link: 'TelegraphDucker' },
     { name: 'Chris Waugh', type: 'journalist', tier: 2, specialty: 'Newcastle', link: 'ChrisDHWaugh' },
     { name: 'Craig Hope', type: 'journalist', tier: 2, specialty: 'Newcastle', link: 'CraigHope_DM' },
