@@ -30,6 +30,7 @@ var sources = [
     { name: 'Dan Kilpatrick', type: 'journalist', tier: 1, specialty: 'Tottenham', link: 'Dan_KP' },
     { name: 'Roshane Thomas', type: 'journalist', tier: 1, specialty: 'West Ham', link: 'RoshaneSport' },
     { name: 'Mohamed Bouhafsi', type: 'journalist', tier: 1, specialty: 'France', link: 'mohamedbouhafsi' },
+    { name: 'Pedro Sepulveda', type: 'journalist', tier: 1, specialty: 'Portugal', link: 'pedromsepulveda' },
     { name: 'Mike Verweij', type: 'journalist', tier: 1, specialty: 'Netherlands', link: 'MikeVerweij' },
     { name: 'Jose Luis Sanchez', type: 'journalist', tier: 1, specialty: 'Real Madrid', link: 'JLSanchez78' },
     { name: 'Phil Hay', type: 'journalist', tier: 1, specialty: 'Leeds', link: 'PhilHay_' },
@@ -85,7 +86,7 @@ var sources = [
     // Tier 3
     { name: 'Santi Aouna', type: 'journalist', tier: 3, specialty: 'Global', link: 'Santi_J_FM' },
     { name: 'Mark Ogden', type: 'journalist', tier: 3, specialty: 'Premier League', link: 'MarkOgden_' },
-    { name: 'Mark Ogden', type: 'journalist', tier: 3, specialty: 'Premier League', link: 'skysports_sheth' },
+    { name: 'Dharmesh Sheth', type: 'journalist', tier: 3, specialty: 'Premier League', link: 'skysports_sheth' },
     { name: 'FPLVillan', type: 'journalist', tier: 3, specialty: 'Aston Villa', link: 'FPLVillan' },
     { name: 'Gerard Romero', type: 'journalist', tier: 3, specialty: 'Barcelona', link: 'gerardromero' },
     { name: 'Gianluca Di Marzio', type: 'journalist', tier: 3, specialty: 'Italy', link: 'DiMarzio' },
