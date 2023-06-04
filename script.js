@@ -92,6 +92,7 @@ var sources = [
     { name: 'Mark Ogden', type: 'journalist', tier: 3, specialty: 'Premier League', link: 'MarkOgden_' },
     { name: 'Dharmesh Sheth', type: 'journalist', tier: 3, specialty: 'Premier League', link: 'skysports_sheth' },
     { name: 'FPLVillan', type: 'journalist', tier: 3, specialty: 'Aston Villa', link: 'FPLVillan' },
+    { name: 'Ben Jacobs', type: 'journalist', tier: 3, specialty: 'Chelsea', link: 'JacobsBen' },
     { name: 'Gerard Romero', type: 'journalist', tier: 3, specialty: 'Barcelona', link: 'gerardromero' },
     { name: 'Gianluca Di Marzio', type: 'journalist', tier: 3, specialty: 'Italy', link: 'DiMarzio' },
     { name: 'talkSPORT', type: 'media', tier: 3, link: 'talkSPORT' },
