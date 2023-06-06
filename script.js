@@ -108,6 +108,7 @@ var sources = [
     { name: 'Miguel Delaney', type: 'shitposter', tier: 4, link: 'MiguelDelaney' },
     { name: 'Julien Laurens', type: 'shitposter', tier: 4, link: 'LaurensJulien' },
     { name: 'Con Harrison', type: 'shitposter', tier: 4, link: 'ConMarbleHalls' },
+    { name: 'Rudy Galetti', type: 'shitposter', tier: 4, link: 'RudyGaletti' },
     { name: 'Daily Mail', type: 'media', tier: 4, link: 'MailSport' },
     { name: 'The Sun', type: 'media', tier: 4, link: 'TheSunFootball' },
     { name: 'Daily Mirror', type: 'media', tier: 4, link: 'MirrorFootball' },
