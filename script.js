@@ -50,6 +50,7 @@ var sources = [
     { name: 'Jacob Steinberg', type: 'journalist', tier: 2, specialty: 'Chelsea/West Ham', link: 'JacobSteinberg' },
     { name: 'Simon Collings', type: 'journalist', tier: 2, specialty: 'Arsenal', link: 'sr_collings' },
     { name: 'Sam Dean', type: 'journalist', tier: 2, specialty: 'Arsenal', link: 'SamJDean' },
+    { name: 'James Benge', type: 'journalist', tier: 2, specialty: 'Arsenal', link: 'jamesbenge' },
     { name: 'Charlie Haffenden', type: 'journalist', tier: 2, specialty: 'Brighton', link: 'JournoHaff' },
     { name: 'Nizaar Kinsella', type: 'journalist', tier: 2, specialty: 'Chelsea', link: 'NizaarKinsella' },
     { name: 'Tom Roddy', type: 'journalist', tier: 2, specialty: 'Chelsea', link: 'TomRoddy_' },
