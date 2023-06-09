@@ -132,6 +132,10 @@ var sources = [
     { name: 'Football Insider', type: 'media', tier: 4, link: 'footyinsider247' },
 ];
 
+var sortedSources = sources.sort(function(a, b) {
+    return a.tier - b.tier;
+  });
+  
 sources.forEach(source => {
     document.querySelector(`.tier-${source.tier} .tier-content`).appendChild(
         document.createRange().createContextualFragment(
@@ -153,49 +157,35 @@ window.onload = function() {
     // Trigger the displaySources function whenever the dropdown menu value changes
     var specialtyFilter = document.getElementById('specialty-filter');
     specialtyFilter.addEventListener('change', displaySources);
-  };
-  
-  function displaySources() {
+};
+
+function displaySources() {
     var selectedSpecialty = document.getElementById('specialty-filter').value;
-  
+
     // Clear the existing tier content
     var tiers = document.getElementsByClassName('tier-content');
     for (var i = 0; i < tiers.length; i++) {
-      tiers[i].innerHTML = '';
+        tiers[i].innerHTML = '';
     }
-  
+
     // Filter the sources based on the selected specialty
     var filteredSources = sources;
-    if (selectedSpecialty !== 'All') {
-      filteredSources = sources.filter(function(source) {
-        var specialties = selectedSpecialty.split('/');
-        return specialties.includes(source.specialty);
-      });
+    if (selectedSpecialty !== '') {
+        filteredSources = sources.filter(function(source) {
+            return source.specialty.includes(selectedSpecialty);
+        });
     }
-  
+
     // Display the filtered sources in their respective tiers
     for (var tier = 1; tier <= 4; tier++) {
-      var tierContent = document.querySelector('.tier-' + tier + ' .tier-content');
-      var tierSources = filteredSources.filter(function(source) {
-        return source.tier === tier;
-      });
-  
-      tierSources.forEach(function(source) {
-        var sourceElement = createSourceElement(source);
-        tierContent.appendChild(sourceElement);
-      });
+        var tierContent = document.querySelector('.tier-' + tier + ' .tier-content');
+        var tierSources = filteredSources.filter(function(source) {
+            return source.tier === tier;
+        });
+
+        tierSources.forEach(function(source) {
+            var sourceElement = createSourceElement(source);
+            tierContent.appendChild(sourceElement);
+        });
     }
-  }
-  
-  function createSourceElement(source) {
-    var sourceElement = document.createElement('div');
-    sourceElement.classList.add('source');
-    sourceElement.innerHTML = '<strong>Name:</strong> ' + source.name + '<br>' +
-      '<strong>Type:</strong> ' + source.type + '<br>' +
-      '<strong>Tier:</strong> ' + source.tier + '<br>' +
-      '<strong>Specialty:</strong> ' + source.specialty + '<br>' +
-      '<strong>Link:</strong> ' + source.link;
-  
-    return sourceElement;
-  }
-  
+}
