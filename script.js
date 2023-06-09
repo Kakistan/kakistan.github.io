@@ -150,32 +150,41 @@ document.querySelectorAll('.tier-content').forEach(node => {
 })
 
 window.onload = function() {
+    // Trigger the displaySources function whenever the dropdown menu value changes
     var specialtyFilter = document.getElementById('specialty-filter');
     specialtyFilter.addEventListener('change', displaySources);
-    
-    displaySources(); // Display initial sources
   };
   
   function displaySources() {
     var selectedSpecialty = document.getElementById('specialty-filter').value;
-    
+  
+    // Clear the existing tier content
     var tiers = document.getElementsByClassName('tier-content');
     for (var i = 0; i < tiers.length; i++) {
       tiers[i].innerHTML = '';
     }
-    
+  
+    // Filter the sources based on the selected specialty
     var filteredSources = sources;
     if (selectedSpecialty !== 'All') {
       filteredSources = sources.filter(function(source) {
-        return source.specialty.includes(selectedSpecialty);
+        var specialties = selectedSpecialty.split('/');
+        return specialties.includes(source.specialty);
       });
     }
-    
-    filteredSources.forEach(function(source) {
-      var sourceElement = createSourceElement(source);
-      var tierContent = document.querySelector('.tier-' + source.tier + ' .tier-content');
-      tierContent.appendChild(sourceElement);
-    });
+  
+    // Display the filtered sources in their respective tiers
+    for (var tier = 1; tier <= 4; tier++) {
+      var tierContent = document.querySelector('.tier-' + tier + ' .tier-content');
+      var tierSources = filteredSources.filter(function(source) {
+        return source.tier === tier;
+      });
+  
+      tierSources.forEach(function(source) {
+        var sourceElement = createSourceElement(source);
+        tierContent.appendChild(sourceElement);
+      });
+    }
   }
   
   function createSourceElement(source) {
