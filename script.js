@@ -132,10 +132,6 @@ var sources = [
     { name: 'Football Insider', type: 'media', tier: 4, link: 'footyinsider247' },
 ];
 
-var sortedSources = sources.sort(function(a, b) {
-    return a.tier - b.tier;
-  });
-  
 sources.forEach(source => {
     document.querySelector(`.tier-${source.tier} .tier-content`).appendChild(
         document.createRange().createContextualFragment(
@@ -188,4 +184,21 @@ function displaySources() {
             tierContent.appendChild(sourceElement);
         });
     }
+    
+    sources.forEach(source => {
+        document.querySelector(`.tier-${source.tier} .tier-content`).appendChild(
+            document.createRange().createContextualFragment(
+                `<a class="source ${source.type === 'journalist' ? 'journalist' : source.type === 'media' ? 'media' : 'shitposter'}" href="https://twitter.com/${source.link}" target="_blank">
+                ${source.type == 'journalist' ? `${source.name} <span class="specialty">(${source.specialty})</span>` : source.name}
+                </a>`
+            )
+        );
+    })
+    
+    document.querySelectorAll('.tier-content').forEach(node => {
+        const element = node.querySelector('.media');
+        if (element && element.classList.contains('media')) {
+            node.insertBefore(document.createRange().createContextualFragment('<div class="flex-break"></div>'), element);
+        }
+    })
 }
