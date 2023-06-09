@@ -5,11 +5,11 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-8T220F0L56"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-8T220F0L56');
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-8T220F0L56');
     </script>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -18,7 +18,7 @@
     <meta property="og:site_name" content="Kaki">
     <meta property="og:title" content="Transfer Reliability Guide">
     <meta property="og:url" content="https://kakistan.github.io">
-    <meta property="og:description" content="Transfer reliability guide created by Kaki.">  
+    <meta property="og:description" content="Transfer reliability guide created by Kaki.">
     <title>Transfer Reliability Guide</title>
     <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap"
         rel="stylesheet">
@@ -26,6 +26,7 @@
         href="style.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
 </head>
+
 <body>
     <div class="container">
         <div class="header">
@@ -33,6 +34,34 @@
             <div class="header-content">
                 <div class="header-text">Transfer Reliability Guide</div>
             </div>
+        </div>
+        <!-- Filter section -->
+        <div class="filter">
+            <label for="specialty-filter">Filter by Specialty:</label>
+            <select id="specialty-filter">
+                <option value="">All</option>
+                <option value="specialty1">Arsenal</option>
+                <option value="specialty2">Aston Villa</option>
+                <option value="specialty3">Bournemouth</option>
+                <option value="specialty4">Brentford</option>
+                <option value="specialty5">Brighton</option>
+                <option value="specialty6">Burnley</option>
+                <option value="specialty7">Chelsea</option>
+                <option value="specialty8">Crystal Palace</option>
+                <option value="specialty9">Everton</option>
+                <option value="specialty10">Fulham</option>
+                <option value="specialty11">Luton</option>
+                <option value="specialty12">Liverpool</option>
+                <option value="specialty13">Man City</option>
+                <option value="specialty14">Man Utd</option>
+                <option value="specialty15">Newcastle</option>
+                <option value="specialty16">Nottingham Forest</option>
+                <option value="specialty17">Sheffield United</option>
+                <option value="specialty18">Tottenham</option>
+                <option value="specialty19">West Ham</option>
+                <option value="specialty20">Wolves</option>
+                <!-- Add more options for each specialty in the sources array -->
+            </select>
         </div>
         <div class="tier tier-1">
             <div class="tier-labels">
@@ -84,15 +113,15 @@
     <script src="script.js"></script>
     <script>
         fetch('https://api.github.com/repos/Kakistan/kakistan.github.io/commits?per_page=1')
-          .then(response => response.json())
-          .then(data => {
-            const lastUpdatedElement = document.getElementById('last-updated');
-            const commitDate = new Date(data[0].commit.committer.date);
-            lastUpdatedElement.textContent = commitDate.toLocaleString();
-          })
-          .catch(error => console.error(error));
-      </script>
-      
+            .then(response => response.json())
+            .then(data => {
+                const lastUpdatedElement = document.getElementById('last-updated');
+                const commitDate = new Date(data[0].commit.committer.date);
+                lastUpdatedElement.textContent = commitDate.toLocaleString();
+            })
+            .catch(error => console.error(error));
+    </script>
+
 </body>
 
 </html>
