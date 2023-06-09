@@ -153,52 +153,49 @@ window.onload = function() {
     // Trigger the displaySources function whenever the dropdown menu value changes
     var specialtyFilter = document.getElementById('specialty-filter');
     specialtyFilter.addEventListener('change', displaySources);
-};
-
-function displaySources() {
+  };
+  
+  function displaySources() {
     var selectedSpecialty = document.getElementById('specialty-filter').value;
-
+  
     // Clear the existing tier content
     var tiers = document.getElementsByClassName('tier-content');
     for (var i = 0; i < tiers.length; i++) {
-        tiers[i].innerHTML = '';
+      tiers[i].innerHTML = '';
     }
-
+  
     // Filter the sources based on the selected specialty
     var filteredSources = sources;
-    if (selectedSpecialty !== '') {
-        filteredSources = sources.filter(function(source) {
-            return source.specialty.includes(selectedSpecialty);
-        });
+    if (selectedSpecialty !== 'All') {
+      filteredSources = sources.filter(function(source) {
+        var specialties = selectedSpecialty.split('/');
+        return specialties.includes(source.specialty);
+      });
     }
-
+  
     // Display the filtered sources in their respective tiers
     for (var tier = 1; tier <= 4; tier++) {
-        var tierContent = document.querySelector('.tier-' + tier + ' .tier-content');
-        var tierSources = filteredSources.filter(function(source) {
-            return source.tier === tier;
-        });
-
-        tierSources.forEach(function(source) {
-            var sourceElement = createSourceElement(source);
-            tierContent.appendChild(sourceElement);
-        });
+      var tierContent = document.querySelector('.tier-' + tier + ' .tier-content');
+      var tierSources = filteredSources.filter(function(source) {
+        return source.tier === tier;
+      });
+  
+      tierSources.forEach(function(source) {
+        var sourceElement = createSourceElement(source);
+        tierContent.appendChild(sourceElement);
+      });
     }
-    
-    sources.forEach(source => {
-        document.querySelector(`.tier-${source.tier} .tier-content`).appendChild(
-            document.createRange().createContextualFragment(
-                `<a class="source ${source.type === 'journalist' ? 'journalist' : source.type === 'media' ? 'media' : 'shitposter'}" href="https://twitter.com/${source.link}" target="_blank">
-                ${source.type == 'journalist' ? `${source.name} <span class="specialty">(${source.specialty})</span>` : source.name}
-                </a>`
-            )
-        );
-    })
-    
-    document.querySelectorAll('.tier-content').forEach(node => {
-        const element = node.querySelector('.media');
-        if (element && element.classList.contains('media')) {
-            node.insertBefore(document.createRange().createContextualFragment('<div class="flex-break"></div>'), element);
-        }
-    })
-}
+  }
+  
+  function createSourceElement(source) {
+    var sourceElement = document.createElement('div');
+    sourceElement.classList.add('source');
+    sourceElement.innerHTML = '<strong>Name:</strong> ' + source.name + '<br>' +
+      '<strong>Type:</strong> ' + source.type + '<br>' +
+      '<strong>Tier:</strong> ' + source.tier + '<br>' +
+      '<strong>Specialty:</strong> ' + source.specialty + '<br>' +
+      '<strong>Link:</strong> ' + source.link;
+  
+    return sourceElement;
+  }
+  
