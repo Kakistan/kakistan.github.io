@@ -148,3 +148,45 @@ document.querySelectorAll('.tier-content').forEach(node => {
         node.insertBefore(document.createRange().createContextualFragment('<div class="flex-break"></div>'), element);
     }
 })
+
+window.onload = function() {
+    var specialtyFilter = document.getElementById('specialty-filter');
+    specialtyFilter.addEventListener('change', displaySources);
+    
+    displaySources(); // Display initial sources
+  };
+  
+  function displaySources() {
+    var selectedSpecialty = document.getElementById('specialty-filter').value;
+    
+    var tiers = document.getElementsByClassName('tier-content');
+    for (var i = 0; i < tiers.length; i++) {
+      tiers[i].innerHTML = '';
+    }
+    
+    var filteredSources = sources;
+    if (selectedSpecialty !== 'All') {
+      filteredSources = sources.filter(function(source) {
+        return source.specialty.includes(selectedSpecialty);
+      });
+    }
+    
+    filteredSources.forEach(function(source) {
+      var sourceElement = createSourceElement(source);
+      var tierContent = document.querySelector('.tier-' + source.tier + ' .tier-content');
+      tierContent.appendChild(sourceElement);
+    });
+  }
+  
+  function createSourceElement(source) {
+    var sourceElement = document.createElement('div');
+    sourceElement.classList.add('source');
+    sourceElement.innerHTML = '<strong>Name:</strong> ' + source.name + '<br>' +
+      '<strong>Type:</strong> ' + source.type + '<br>' +
+      '<strong>Tier:</strong> ' + source.tier + '<br>' +
+      '<strong>Specialty:</strong> ' + source.specialty + '<br>' +
+      '<strong>Link:</strong> ' + source.link;
+  
+    return sourceElement;
+  }
+  
