@@ -103,7 +103,7 @@ var sources = [
     { name: 'The Independent', type: 'media', tier: 3, link: 'IndySport' },
     { name: 'Sky Sports', type: 'media', tier: 3, link: 'SkyFootball' },
     { name: 'The Guardian', type: 'media', tier: 3, link: 'guardian_sport' },
-    { name: 'The Telegraph', type: 'media', tier: 3, link: 'TelegraphSport' },
+    { name: 'The Telegraph', type: 'media', tier: 3, link: 'TeleFootball' },
     // Tier 4
     { name: 'Pedro Almeida', type: 'shitposter', tier: 4, link: 'pedrogva6' },
     { name: 'Nicolo Schira', type: 'shitposter', tier: 4, link: 'NicoSchira' },
