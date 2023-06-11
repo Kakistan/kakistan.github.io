@@ -99,6 +99,7 @@ var sources = [
     { name: 'Ben Jacobs', type: 'journalist', tier: 3, specialty: 'Chelsea', link: 'JacobsBen' },
     { name: 'Gerard Romero', type: 'journalist', tier: 3, specialty: 'Barcelona', link: 'gerardromero' },
     { name: 'Gianluca Di Marzio', type: 'journalist', tier: 3, specialty: 'Italy', link: 'DiMarzio' },
+    { name: 'Sacha Tavolieri', type: 'journalist', tier: 3, specialty: 'Belgium', link: 'sachatavolieri' },
     { name: 'talkSPORT', type: 'media', tier: 3, link: 'talkSPORT' },
     { name: 'The Independent', type: 'media', tier: 3, link: 'IndySport' },
     { name: 'Sky Sports', type: 'media', tier: 3, link: 'SkyFootball' },
