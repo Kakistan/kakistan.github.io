@@ -19,6 +19,7 @@ var sources = [
     { name: 'Matt Law', type: 'journalist', tier: 1, specialty: 'Chelsea', link: 'Matt_Law_DT' },
     { name: 'Simon Johnson', type: 'journalist', tier: 1, specialty: 'Chelsea', link: 'SJohnsonSport' },
     { name: 'Matt Woosnam', type: 'journalist', tier: 1, specialty: 'Crystal Palace', link: 'MattWoosie' },
+    { name: 'Peter Rutzler', type: 'journalist', tier: 1, specialty: 'Fulham', link: 'peterrutzler' },
     { name: 'Sam Lee', type: 'journalist', tier: 1, specialty: 'Man City', link: 'SamLee' },
     { name: 'Jack Gaughan', type: 'journalist', tier: 1, specialty: 'Man City', link: 'Jack_Gaughan' },
     { name: 'Laurie Whitwell', type: 'journalist', tier: 1, specialty: 'Man Utd', link: 'lauriewhitwell' },
