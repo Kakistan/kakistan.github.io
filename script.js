@@ -10,6 +10,7 @@ var sources = [
     { name: 'Paul Joyce', type: 'journalist', tier: 1, specialty: 'Everton/Liverpool', link: '_pauljoyce' },
     { name: 'Ahmed Shooble', type: 'journalist', tier: 1, specialty: 'Bournemouth/Fulham', link: 'AhmedShooble' },
     { name: 'Charles Watts', type: 'journalist', tier: 1, specialty: 'Arsenal', link: 'charles_watts' },
+    { name: 'Jacob Tanswell', type: 'journalist', tier: 1, specialty: 'Aston Villa', link: 'J_Tanswell' },
     { name: 'Mark McAdam', type: 'journalist', tier: 1, specialty: 'Bournemouth', link: 'markmcadamtv' },
     { name: 'Kris Temple', type: 'journalist', tier: 1, specialty: 'Bournemouth', link: 'jaydmharris' },
     { name: 'Jay Harris', type: 'journalist', tier: 1, specialty: 'Brentford', link: 'kristemple' },
