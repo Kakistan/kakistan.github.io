@@ -31,6 +31,7 @@ var sources = [
     { name: 'Alasdair Gold', type: 'journalist', tier: 1, specialty: 'Tottenham', link: 'AlasdairGold' },
     { name: 'Dan Kilpatrick', type: 'journalist', tier: 1, specialty: 'Tottenham', link: 'Dan_KP' },
     { name: 'Roshane Thomas', type: 'journalist', tier: 1, specialty: 'West Ham', link: 'RoshaneSport' },
+    { name: 'Jack Rosser', type: 'journalist', tier: 1, specialty: 'West Ham', link: 'JackRosser_' },
     { name: 'Mohamed Bouhafsi', type: 'journalist', tier: 1, specialty: 'France', link: 'mohamedbouhafsi' },
     { name: 'Pedro Sepulveda', type: 'journalist', tier: 1, specialty: 'Portugal', link: 'pedromsepulveda' },
     { name: 'Mike Verweij', type: 'journalist', tier: 1, specialty: 'Netherlands', link: 'MikeVerweij' },
