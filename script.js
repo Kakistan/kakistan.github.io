@@ -47,6 +47,8 @@ var sources = [
     { name: 'Dominic King', type: 'journalist', tier: 2, specialty: 'Premier League', link: 'DominicKing_DM' },
     { name: 'Gary Jacob', type: 'journalist', tier: 2, specialty: 'Premier League', link: 'garyjacob' },
     { name: 'Daniel Taylor', type: 'journalist', tier: 2, specialty: 'Premier League', link: 'DTathletic' },
+    { name: 'Dharmesh Sheth', type: 'journalist', tier: 2, specialty: 'Premier League', link: 'skysports_sheth' },
+    { name: 'Lyall Thomas', type: 'journalist', tier: 2, specialty: 'Premier League', link: 'SkySportsLyall' },
     { name: 'Tom Collomosse', type: 'journalist', tier: 2, specialty: 'Premier League', link: 'TomCollomosse' },
     { name: 'Matt Maher', type: 'journalist', tier: 2, specialty: 'Premier League', link: 'mjmarr_star' },
     { name: 'Pete O\'Rourke', type: 'journalist', tier: 2, specialty: 'Premier League', link: 'SportsPeteO' },
