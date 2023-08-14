@@ -147,7 +147,7 @@ var sources = [
 sources.forEach(source => {
     document.querySelector(`.tier-${source.tier} .tier-content`).appendChild(
         document.createRange().createContextualFragment(
-            `<a class="source ${source.type === 'journalist' ? 'journalist' : source.type === 'media' ? 'media' : 'shitposter'}" href="https://twitter.com/${source.link}" target="_blank">
+            `<a class="source ${source.type === 'journalist' ? 'journalist' : source.type === 'media' ? 'media' : 'shitposter'}" href="https://x.com/${source.link}" target="_blank">
             ${source.type == 'journalist' ? `${source.name} <span class="specialty">(${source.specialty})</span>` : source.name}
             </a>`
         )
